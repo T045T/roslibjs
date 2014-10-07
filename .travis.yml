@@ -24,5 +24,6 @@ before_script:
   - sh test/examples/setup_examples.sh
 script:
   - rostopic list
+  - rosnode list
   - npm test
   - npm run test-examples
