@@ -22,6 +22,7 @@ before_install:
 before_script:
   - source /opt/ros/hydro/setup.bash
   - roslaunch test/examples/setup_examples.launch > /dev/null 2>&1 &
+  - sleep 10
 script:
   # verify all topics and nodes are present
   - rostopic list
