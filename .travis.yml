@@ -26,6 +26,7 @@ before_script:
   - dpkg-query -L ros-hydro-rosbridge-server
   - dpkg-query -L ros-hydro-rosbridge-library
   - echo $PYTHONPATH
+  - python printpath.py
 script:
   # verify all topics and nodes are present
   - rostopic list
