@@ -23,6 +23,8 @@ before_script:
   - source /opt/ros/hydro/setup.bash
   - roslaunch test/examples/setup_examples.launch &
   - sleep 10
+  - dpkg-query -L ros-hydro-rosbridge-server
+  - dpkg-query -L ros-hydro-rosbridge-library
 script:
   # verify all topics and nodes are present
   - rostopic list
