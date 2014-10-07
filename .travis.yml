@@ -25,6 +25,7 @@ before_script:
   - sleep 10
   - dpkg-query -L ros-hydro-rosbridge-server
   - dpkg-query -L ros-hydro-rosbridge-library
+  - echo $PYTHONPATH
 script:
   # verify all topics and nodes are present
   - rostopic list
