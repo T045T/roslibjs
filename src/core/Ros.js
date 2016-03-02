@@ -25,6 +25,7 @@ var EventEmitter2 = require('eventemitter2').EventEmitter2;
  * @constructor
  * @param options - possible keys include:
  *   * url (optional) - the WebSocket URL for rosbridge (can be specified later with `connect`)
+ *   * groovyCompatibility - don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools (defaults to true)
  */
 function Ros(options) {
   options = options || {};
