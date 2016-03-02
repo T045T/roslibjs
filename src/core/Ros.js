@@ -445,7 +445,7 @@ Ros.prototype.decodeTypeDefs = function(defs) {
     }
     return typeDefDict;
   };
-  
+
   return decodeTypeDefsRec(defs[0], defs);
 };
 
